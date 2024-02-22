@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\analo\Documents\Cursos\html-css-cursoemvideo\Imagens\htmlicon.png" type="image/x-icon">
+    <title>Meu Projeto de Site</title>
+</head>
+<body>
+   <h1>Listas e Links</h1>
+   <h2>Ordenadas</h2>
+    <p>Usamos a tag OL:</p>
+    <ol> <!--type="" muda a formatação do indicador, e start="" é usado quando queremos que a lista comece em algum ponto que não um, para começar a contar a partir de 5, por exemplo.-->
+        <li>Acordar</li>
+        <li>Trocar de Roupa</li>
+        <li>Tomar Café</li>
+        <li>Escovar os Dentes</li>
+    </ol>
+   <h2>Não Ordenadas</h2>
+   <p>Para listas que não precisam de numeração, usamos as listas não ordenadas, com a tag UL. Exemplo:</p>
+   <ul> <!--type="" muda a formatação do indicador-->
+    <li>Aulas de Programação</li>
+    <li>Aulas de Idiomas</li>
+    <li>Academia</li>
+    <li>Ler 3 capítulos</li>
+   </ul>
+   <h2>Lista Mistas e de Definição</h2>
+   <h3>Misturando estilos de listas:</h3>
+   <ul>
+    <li>Línguas que sei</li>
+        <ol type="a">
+            <li>Português</li>
+            <li>Inglês</li>
+        </ol>
+    <li>Línguas que estou aprendendo</li>
+        <ol type="a" start="3">
+            <li>Espanhol</li>
+            <li>Catalão</li>
+            <li>Italiano</li>
+        </ol>
+   </ul>
+   <h3>Lista de Definições</h3>
+   <p>Usamos esse tipo de lista para colocar termos e definições, e para ela as tags são DL, DT e DD. Essa lista é importante especialmente para mecanismos de busca.</p>
+   <dl>
+    <dt>ABNT</dt>
+    <dd>Associação Brasileira de Normas Técnicas.</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para o design de um site.</dd>
+   </dl>
+   <h2>Links</h2>
+   <p>Hoje temos ferramentas de buscas, como o Google, para encontrar sites, e elas são baseadas em Links.</p>
+   <h3>Links Externos</h3>
+   <p>Você pode indexar links que levam para <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/trabalhador/qualificacao-profissional/caminho-digital" target="_blank" rel="external">outros sites</a>.</p> <!--a="" significa âncora; usamos a tag target="_blank" para abrir o link em uma nova aba-->
+   <h3>Links Internos</h3>
+   <p>Links internos são aqueles que levam para <a href="pg2.html" target="_self" rel="next">outras seções</a> do próprio site.</p>
+   <h3>Links para downloads</h3>
+   Aqui você pode fazer o download do <a href="C:\Users\analo\Documents\Cursos\html-css-cursoemvideo\Certificado_paraexercicio\Certificado.zip" download="Certificado" type="application/zip">Certificado</a>
+</body>
+</html>

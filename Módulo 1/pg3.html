@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\analo\Documents\Cursos\html-css-cursoemvideo\Imagens\htmlicon.png" type="image/x-icon">
+    <title>Página 3</title>
+</head>
+<body>
+    <h1>Bem-vindos &agrave 3<sup>a</sup> página</h1>
+    <h2>Imagens Dinâmicas</h2>
+    <p>Aqui, usamos as tags PICTURE, SOURCE e IMG para inserir imagens dinâmicas, que se ajustam ao tamanho da tela.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="C:\Users\analo\Documents\Cursos\html-css-cursoemvideo\Imagens\imagemP.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="C:\Users\analo\Documents\Cursos\html-css-cursoemvideo\Imagens\imagemM.png" type="image/png">
+        <img src="C:\Users\analo\Documents\Cursos\html-css-cursoemvideo\Imagens\imagemG.png" alt="Imagem Flexível">
+    </picture>
+    <h2>Áudios</h2>
+    <p>Para inserir áudios com HTML no seu site, é possível usar a tag AUDIO.</p>
+    <audio src="C:\Users\analo\Documents\Cursos\html-css-cursoemvideo\midia\audiolasramblas.m4a" controls></audio>
+    <h2>Vídeos Locais</h2>
+    <p>Para inserir vídeos hospedados localmente (no próprio servidor), use a tag VIDEO. Porém, vídeos hospedados dessa maneira vão consumir muito tráfego de dados.</p>
+    <video controls poster="C:\Users\analo\Documents\Cursos\html-css-cursoemvideo\midia\capamonestir.jpg" height="500px">
+        <source src="C:\Users\analo\Documents\Cursos\html-css-cursoemvideo\midia\monestirdepedralbesmp4.mp4" type="video/mp4">
+        <source src="C:\Users\analo\Documents\Cursos\html-css-cursoemvideo\midia\monestirdepedralbesogv.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com a reprodução de vídeos.</p>
+    </video>
+    <h2>Vídeos Externos</h2>
+    <p>Também é possível inserir vídeos externos ao seu site, usando a ferramenta de <strong>incorporar</strong> dos sites de vídeo. Portanto, é interessante ter seus vídeos postados no YouTube (ou qualquer outro site, como o Vimeo ou TikTok) e usar essa ferramenta para incorporá-los, sem consumir tráfego de dados do seu site.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ScZy9RiUhvk?si=VAlZy1v3Wxmu-7Mz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+<footer>
+    <p><a href="pg4.html">Próximo</a></p>
+    <p><a href="pg2.html">Voltar</a></p> <!-- ../ é usado para fazer link com um arquivo na pasta anterior-->
+</footer>
+</html>

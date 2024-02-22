@@ -1,0 +1,109 @@
+/*
+asterisco é seletor de configuração global
+
+Font shorthand
+font: style > weight > size > family. Exemplo:
+font: italic bold 2em 'Work Sans', sans-serif;
+
+Id são representadas com #
+
+Class são representadas com .
+
+Pseudoclasses usam :
+
+Para acessar um "filho" de um elemento, usamos o sinal >
+
+Pseudo elementos ::
+
+É possível criar box-shadow com o Inspecionar do Chrome (ajusta no Chrome, copia e cola o código gerado)
+*/
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Sixtyfour&display=swap');
+
+@font-face {
+    font-family: 'Country Wedding';
+    src: url('../Fonts/country_wedding/Country\ Wedding.ttf') format('truetype');
+  }
+
+body {
+    background-color: #C75D28;
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+    background-color: #fdedd9bd;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #805d3c7e;
+}
+
+h1#principal {
+    padding: 10pt;
+    text-shadow: 2px 2px #5e1904;
+    margin: auto;
+}
+
+h1 {
+    background-color: rgba(255, 255, 255, 0.753);
+    color: #3A5E61;
+    text-align: center;
+    font-family: "Sixtyfour", sans-serif;
+}
+
+h2 {
+    background-color: rgba(255, 255, 255, 0.753);
+    font-family: "Protest Riot", sans-serif;
+    color: #5e1904;
+}
+
+h3 {
+    background-color: rgba(255, 255, 255, 0.753);
+    font-family: 'Country Wedding';
+    font-size: 2em;
+}
+
+div {
+    display: inline-block;
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+div > p {
+    display: none;
+}
+
+div:hover {
+    background-color: rgba(57, 123, 106, 0.668);
+}
+
+div:hover > p {
+    display: block;
+    color: white;
+    background-color: rgb(67, 89, 69);
+}
+
+p {
+    background-color: rgba(255, 255, 255, 0.753);
+    text-align: justify;
+    text-indent: 15pt;
+    padding: 4px;
+}
+
+footer {
+    font-family: "Protest Riot", sans-serif;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.829);
+    text-decoration: dashed;
+    font-weight: lighter;
+}
+

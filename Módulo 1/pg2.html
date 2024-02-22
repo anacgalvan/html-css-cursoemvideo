@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\analo\Documents\Cursos\html-css-cursoemvideo\Imagens\htmlicon.png" type="image/x-icon">
+    <title>Meu Projeto de Site</title>
+</head>
+<body>
+    <h1>Projeto de Site</h1>
+    <hr> <!--Para colocar os símbolos de < e >, usa-se &lt; para < (less than) e &gt; para > (grater than)-->
+    <p>Vamos adicionar alguns emoji: &#x2744 &#x1F385 <!--emojipedia--> </p>
+    <p>Inserindo imagens <!--sites: unspash; pexels; freepik--> </p>
+    <img src="C:\Users\analo\Documents\Cursos\html-css-cursoemvideo\Imagens\html5200.png" alt="Logo HTML5">    
+    <h2>Hierarquia de Títulos</h2>
+    <p>Cada título tem uma ordem hierárquica, que vai de H1 a H6. É importante utilizar o título certo para a ordem do título, por motivos de semântica (ou seja, forma fica com o CSS, significado com o HTML).</p>
+    <h2>Principais formatações:</h2>
+    <h3>Negrito / Destaque</h3>
+    <p>Nessa frase, temos um <b>termo</b> em negrito com a tag B (tag não semântica). E nessa frase, temos um <strong>termo</strong> em destaque, usando a tag STRONG.</p>
+    <h3>Itálico / Ênfase</h3>
+    <p>Nessa frase, temos um <i>termo</i> em itálico usando a tag I (tag não semântica). E nessa, um <em>termo</em> em ênfase, usando a tag EM.</p>
+    <h3>Texto Marcado</h3>
+    <p>Podemos criar também um <mark style="background-color: lime;">texto marcado</mark> criando a tag MARK.</p> <!--a parte style, que muda a cor do marcador de texto, é CSS e nesse caso funciona apenas em uma única tag.-->
+    <h3>Texto Grande e Pequeno</h3>
+    <p>Estamo criando um <big>texto grande</big> e um <small>texto pequeno</small>, com as tags BIG (obsoleta) e SMALL.</p>
+    <h3>Texto Deletado</h3>
+    <p>Podemos marcar um texto como <del>excluído</del>, ou seja, ele deve ser lido mas não consideradom usando a tag DEL.</p>
+    <h3>Texto Inserido</h3>
+    <p>Podemos marcar um texto como <ins>inserido</ins>, o que dá ênfase e indica que ele foi adicionado posteriormente, usando a tag INS.</p>
+    <p>Existe ainda a ênfase <u>sublinhada</u> usando a tag U, mas ela não é semântica.</p>
+    <h3>Texto Sobrescrito e Subscrito</h3>
+    <p>Texto Sobrescrito é para inserir coisas como x<sup>2</sup>+3, usando a tag SUP.</p>
+    <p>Texto Subscrito é para inserir textos como H<sub>2</sub>O, usando a tag SUB.</p>
+    <h2>Outras Formatações e Código-Fonte</h2>
+    <p>O comando <code>document.getElementById('test')</code> é escrito em linguagem JavaScript. Para usar essa formatação, usamos a tag CODE.</p>
+    <p>O exemplo abaixo usa as tags PRE e CODE para inserir um código em Pithon com indentação:</p>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computado é um burro muito rápido</q>. Para inserir a citação de forma semântica, usamos a tag Q.</p>
+    <p>Para inserir citações completas, ou seja, citações longas, usamos a tag BLOCKQUOTE:</p>
+    <blockquote cite="Referência">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque non fuga voluptatum perferendis, cupiditate id? Dolore reiciendis esse natus! Et tenetur quibusdam consectetur. Rerum, quasi eos asperiores nam facere pariatur.</blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, e para inserir o significado das Abreviações, utilizamos a tag ABBR.</p>
+    <h2>Texto Invertido</h2>
+    <p>Essa tag: BDO, é usada para escrever algo invertido.</p>
+        <bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo>
+    <p><a href="pg1.html" rel="prev">Voltar</a></p> <!-- ./ é usado para linkar arquivos na mesma pasta -->
+    <p><a href="pg3.html">Próximo</a></p>
+</body>
+</html>
