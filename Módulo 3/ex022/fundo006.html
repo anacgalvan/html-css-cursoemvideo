@@ -7,16 +7,22 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
-            background-image: url('imagens/wallpaper002.jpg');
-            background-position: center center;
-            background-repeat: repeat-y;
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat  fixed;
             background-size: cover;
+            
+
+            /*shorthand BACKGROUND
+            ordem:
+            color > image > position > repeat > *[size]* > attachment
+            
+            *na documentação, diz-se que o background-size funciona na shorthand, mas na prática isso não procede. Portanto, é preciso utilizar o seletor de forma separada.
+
+            */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid rgb(8, 55, 61);
