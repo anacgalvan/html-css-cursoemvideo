@@ -14,13 +14,20 @@
         }
 
         table {
-            width: 500px;
+            width: 300px;
             border-collapse: collapse;
+            position: relative;
         }
 
         thead {
             background-color: rgb(84, 84, 84);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(84, 84, 84);
         }
 
         td, th {
@@ -37,17 +44,22 @@
             color: white;
         }
 
-        legend{
+        caption{
             font-size: 0.8em;
             text-align: left;
             padding-top: 10px;
-            padding-bottom: 20px;
+            padding-bottom: 10px;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
     </style>
 </head>
 <body>
-    <h1>População Brasileira por Unidades Federativas</h1>
+    <h1>Uso de Tabelas Grandes</h1>
     <!--Anatomia para tabelas grandes:
+        CAPTION
         TABLE
             THEAD
                 tr
@@ -65,8 +77,8 @@
     <table>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -181,14 +193,14 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
+        <caption>População Brasileira por Unidades Federativas <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">*Fonte</a></caption>
     </table>
-    <legend><a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">Fonte</a></legend>
     <div>
-        <p><a href="#">Próxima Página</a></p>
+        <p><a href="tabela003.html">Próxima Página</a></p>
         <p><a href="tabela001.html">Voltar</a></p>
     </div>
 </body>
