@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: auto;
+            text-align: justify;
+            background-color: lightgray;
+        }
+        h1, h2 {
+            text-align: center;
+            padding: 10px;
+        }
+        div.text {
+            background-color: white;
+        }
+        p {
+            margin-left: 15px;
+            margin-bottom: 20px;
+            padding: 20px;
+            
+        }
+        iframe {
+            display: block;
+            margin: auto;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="text">
+        <h1>Inconvenientes do iframe</h1>
+        <ul>
+            <li>Iframe e Frame (html 4) são diferentes.</li>
+            <li>Mecanismos de busca: google bot vasculha os sites e determina a relevância para indexá-los no resultado de uma busca > SEO (searching engine optimization). Google bot tem certas limitações na leitura de iframes, o que pode afetar na indexação de sites que utilizam muito esse recurso.</li>
+            <li>Usabilidade e acessibilidade: iframes não performam bem em leitores de tela. Além disso, os navegadores podem se confundir com os comandos dentro do iframe, por exemplo, target='_blank'.</li>
+            <li>O iframe 'abre a porta' do seu site para outros sites. É importante ter cuidado com os sites abertos dentro do próprio site pelo iframe.</li>
+        </ul>
+        <h1>Tornando iframes mais seguros</h1>
+        <p>Veja o exemplo na <a href="ex28.html">Próxima Página</a></p>
+        <p>É possível bloquear algumas capturas de informações com sandbox=sandbox; também pode-se usar o referrer-policy=no-referrer (o que está carregado dentro do iframe não coleta nenhum dado do usuário), como no exemplo abaixo:</p>
+
+        <iframe
+        src="ex28.html"
+        sandbox="sandbox"
+        referrerpolicy="no-referrer">
+        <p>Seu navegador não é compatível com esse rescurso.</p>
+        </iframe>
+
+        <h2>Usando JavaScript em iframes</h2>
+        <p>Deixar um site executar scripts no teu site pode ser perigoso. Para bloquear, referrerpolicy=no-referrer e sandbox=sandbox</p>
+        <p><a href="ex29.html">Exemplo</a>:</p>
+        
+        <iframe src="ex29.html" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+
+        <cite>Não abra a porta da sua casa para qualquer pessoa entrar.</cite>
+    </div>
+    <hr>
+    <div>
+        <p><a href="ex26.html">Voltar</a></p>
+        <p><a href="ex30.html">Próxima Página</a></p>
+    </div>
+</body>
+</html>
