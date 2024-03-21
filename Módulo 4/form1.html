@@ -12,10 +12,23 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="">
-        <p>Nome: <input type="text" name="Nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="Nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
     </form>
+    <hr>
+    <div>
+        <p><a href="ex31.html">Voltar</a></p>
+        <p><a href="form2.html">Próxima Página</a></p>
+        <!-- 
+            Tipos de Método de Envio de Dados
+            1 - GET = quando nao especificamos o método, esse é o padrão. Coloca os dados na URL. Quando os dados não forem sensíveis, esse método pode ser utilizado. Bom para links compartilháveis. Até 3000 bytes (cerca de 3000 caracteres).
+            2 - POST = os dados não aparecem na URL, mas sim nas headers do Inspecionar. Mais de 3000 bytes, envio de arquivos.
+            Nenhum dos dois protege os dados, para isso é precisa criptografar e utilizar HTTPS.
+        -->
+    </div>
 </body>
 </html>
