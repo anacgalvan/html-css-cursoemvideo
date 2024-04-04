@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 6</title>
+</head>
+<body>
+    <h1>Form 6</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <div>
+            <h2>Aula 1</h2>
+            <p>
+                <label for="icor">Cor</label>
+                <input type="color" name="cor" id="icor" value="#ff0000">
+            </p>
+            <p>
+               <label for="inivel">Níveis de Satisfação</label>
+               <input type="range" name="nivel" id="inivel" min="1" max="5" value="5">
+            </p>
+            <p>
+                <!--Para utilizar o input FILE, é preciso que o formulário tenha como definição o método POST-->
+                <label for="ifoto">Foto</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </div>
+        <hr>
+        <div>
+            <h2>Aula 2</h2>
+            <form action="cadastro.php" method="post">
+                <p>
+                    <label for="iest">Estado</label>
+                    <select name="est" id="iest">
+                        <option value="Selecione">--Selecione--</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="iprof">Profissão</label>
+                    <input type="text" name="prof" id="iprof" list="listprof">
+                    <datalist id="listprof">
+                        <option>Administrador</option>
+                        <option>Advogado</option>
+                        <option>Professor</option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="imensg">Mensagem</label>
+                    <br>
+                    <textarea name="mensg" id="imensg" cols="60" rows="10" placeholder="Digite aqui sua mensagem..."></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+    <hr>
+    <div>
+        <p><a href="form5.html">Voltar</a></p>
+        <p><a href="form7.html">Próxima Página</a></p>
+    </div>
+</body>
+</html>
